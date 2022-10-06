@@ -1,0 +1,13 @@
+/* challenge 1: Create a variable $text-color and set it to red. Then change
+    the value of the color property for the .blog-post and h2 to the $text-color
+    variable. */
+
+$text-color: red;
+
+.header {
+  text-align: center;
+}
+.blog-post,
+h2 {
+  color: $text-color;
+}
