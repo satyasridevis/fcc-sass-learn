@@ -1,0 +1,11 @@
+// Use @while to create a series of classes with different font-sizes.
+
+// There should be 5 different classes from text-1 to text-5. Then set font-size to 15px multiplied by the current index number. Make sure to avoid an infinite loop!
+
+$x: 1;
+@while $x <=5 {
+  .text-#{$x} {
+    font-size: 15px * $x;
+    $x: $x + 1;
+  }
+}

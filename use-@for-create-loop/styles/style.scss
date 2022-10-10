@@ -1,0 +1,8 @@
+//Write a @for directive that takes a variable $j that goes from 1 to 6.
+// It should create 5 classes called .text-1 to .text-5 where each has a font-size set to 15px multiplied by the index.
+
+@for $j from 1 through 6 {
+  .text-#{$j} {
+    font-size: 15px * $j;
+  }
+}
